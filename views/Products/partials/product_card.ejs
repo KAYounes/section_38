@@ -1,0 +1,11 @@
+<a class="product-card" href="<%=`http://localhost:8080/products/${product.id}`%>">
+    <span data-product-type>
+        <%= product.category %>
+    </span>
+    <span data-product-name>
+        <%= product.name %>
+    </span>
+    <span data-product-price>
+        $ <%= product.price.toPrecision(3) %>
+    </span>
+</a>

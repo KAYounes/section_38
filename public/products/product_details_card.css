@@ -1,0 +1,81 @@
+#product-details-card
+{
+    width: 90%;
+    background-color: #f2dcbf;
+    display: flex;
+    border-radius: 15px;
+    padding: 2%;
+    gap: 1%;
+    margin: 3% auto; 
+    box-shadow: 0px 7px 20px 0 rgba(115, 116, 156, 0.08);
+}
+
+#product-details-card > span 
+{
+    /* width: 100%;
+    padding: 2%; */
+}
+
+
+#product-details-card > span[data-left-side]
+{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    gap: 1em;
+}
+
+#product-details-card > span[data-left-side] > span[data-product-name]
+{
+    text-transform: capitalize;
+    font-size: 1.6rem;
+    font-weight: 600;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+}
+
+#product-details-card > span[data-left-side] > span[data-product-details]
+{
+    display: -webkit-box;
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+    flex-grow: 1;
+}
+
+#product-details-card > span[data-left-side] > span[data-product-type]
+{
+    border-radius: 100vw;
+    background-color: #deb887;
+    width: fit-content;
+    padding: 0.5em 1em;
+}
+
+#product-details-card > span[data-right-side]
+{
+    /* background-color: wheat; */
+    width: 15%;
+    display: grid;
+    place-items: center;
+}
+
+#product-details-card > span[data-right-side] > span[data-price-box]
+{
+    width: fit-content;
+    padding: 25%;
+    font-size: 1.5rem;
+    font-weight: 500;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0px 7px 20px 0 rgba(115, 116, 156, 0.1);
+    background-color: hsl(34, 66%, 80%);
+}

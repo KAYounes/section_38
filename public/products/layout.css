@@ -1,0 +1,17 @@
+*, html, body
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html
+{
+    background-color: antiquewhite;
+}
+
+#content 
+{
+    padding: 5% 10%;
+    font-family: 'Rubik';
+}
